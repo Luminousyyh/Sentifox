@@ -1,0 +1,73 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sentifox"
+version = "2.0.0"
+description = "Sentifox - 认知增强的多智能体舆情分析与传播仿真系统"
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.10"
+authors = [
+    {name = "Sentifox Team"},
+]
+keywords = [
+    "sentiment-analysis",
+    "opinion-monitoring",
+    "multi-agent-simulation",
+    "temporal-graph",
+    "cognitive-agent",
+    "chinese-nlp",
+]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Science/Research",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Text Processing :: Linguistic",
+]
+
+dependencies = [
+    "streamlit>=1.30",
+    "plotly>=5.18",
+    "pandas>=2.0",
+    "numpy>=1.24",
+    "networkx>=3.0",
+    "scipy>=1.11",
+    "transformers>=4.35",
+    "torch>=2.1",
+    "jieba>=0.42",
+    "chromadb>=0.4",
+    "scikit-learn>=1.3",
+    "requests>=2.31",
+    "rich>=13.0",
+    "pyvis>=0.3",
+    "python-docx>=1.1",
+    "apscheduler>=3.10",
+    "wordcloud>=1.9",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.4",
+    "black>=23.0",
+    "ruff>=0.1",
+]
+
+[project.scripts]
+sentifox = "cli:main"
+
+[project.urls]
+Homepage = "https://github.com/yourusername/sentifox"
+Repository = "https://github.com/yourusername/sentifox"
+Issues = "https://github.com/yourusername/sentifox/issues"
+
+[tool.setuptools]
+packages = [""]
